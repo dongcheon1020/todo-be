@@ -18,8 +18,8 @@ mongoose
   .then(() => {
     console.log("mongoose connected");
   })
-  .catch((err) => {
-    console.log("DB connected fail", err);
+  .catch((e) => {
+    console.log("DB connected fail", e);
   });
 
 app.listen(process.env.PORT || 5001, () => {
